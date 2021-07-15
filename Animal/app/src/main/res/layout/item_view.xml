@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    style="@style/Style"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="160dp"
+            android:layout_height="192dp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/tiger" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_toEndOf="@+id/ivImage"
+            android:text="Name: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_toEndOf="@+id/tvName"
+            android:text="Tiger"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_below="@+id/tvName"
+            android:layout_toEndOf="@+id/ivImage"
+            android:text="Type: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_below="@+id/name"
+            android:layout_toEndOf="@+id/tvName"
+            android:text="WILD"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tvSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_below="@+id/tvType"
+            android:layout_toEndOf="@+id/ivImage"
+            android:text="  Sound: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Roar"
+            android:layout_toEndOf="@+id/tvSound"
+            android:layout_below="@+id/type"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
